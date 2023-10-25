@@ -1,0 +1,19 @@
+RewriteEngine On
+
+# Redirige les requêtes pour le domaine racine vers Front_Office/index.php
+RewriteRule ^$ /Front_Office/index.php [L]
+
+# Redirige les requêtes pour /admin/* vers Back_Office/*
+RewriteRule ^admin/(.*)$ /Back_Office/$1 [L,QSA]
+
+# Réécriture de l'URL pour enlever l'extension .php pour les fichiers qui existent
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Redirige les requêtes pour les pages vers les pages correspondantes dans Front_Office
+RewriteCond %{DOCUMENT_ROOT}/Front_Office/$1.php -f
+RewriteRule ^(.*)$ /Front_Office/$1 [L,QSA]
+
+# Pages d'erreur personnalisées
+ErrorDocument 404 /Front_Office/404.html
+ErrorDocument 500 /Front_Office/500.html

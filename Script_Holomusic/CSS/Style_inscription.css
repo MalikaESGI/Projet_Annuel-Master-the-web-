@@ -1,0 +1,377 @@
+
+        /* code CSS ici pour la page inscription */
+		html{ 
+
+
+            @font-face {
+                font-family: 'Raleway';
+                src: url('Raleway-Italic.woff2') format('woff2'),
+                    url('Raleway-Italic.woff') format('woff');
+                font-weight: normal;
+                font-style: italic;
+               
+            }
+            
+            @font-face {
+                font-family: 'Raleway';
+                src: url('Raleway-Regular.woff2') format('woff2'),
+                    url('Raleway-Regular.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+                
+            }
+            
+            @font-face {
+                font-family: 'Raleway';
+                src: url('Raleway-Bold.woff2') format('woff2'),
+                    url('Raleway-Bold.woff') format('woff');
+                font-weight: bold;
+                font-style: normal;
+               
+            }
+            
+            @font-face {
+                font-family: 'Raleway';
+                src: url('Raleway-BoldItalic.woff2') format('woff2'),
+                    url('Raleway-BoldItalic.woff') format('woff');
+                font-weight: bold;
+                font-style: italic;
+               
+            }
+            }
+                    
+                   *{
+                       padding:0; 
+                  box-sizing:border-box;
+                  font-family:'Raleway',sans-serif,bold;
+              color:white;
+              }
+              
+              
+               body{ background-color:black;}
+               
+               main{ 
+               width: 100%;
+               min-height: 100vh;
+               /*overflow:hidden;*/
+               padding:2rem;
+               display:flex;
+               align-items:center;
+               justify-content:center;}
+               
+               
+               
+               .box1{
+                  position:relative;
+                 width:100%;
+                 max-width:1020px;
+                 height:555px;
+                 background-color:#121317;
+                 border-radius:20px;
+             }
+              
+              
+              
+              
+                     .inner-box{
+                 position:absolute;
+                 width:calc(100% - 4.1rem);
+                 height:calc(100% - 4.1rem); 
+                 
+                 
+                /*calculer la hauteur et la largeur grace à la fonction calc 100% de la largeur/hauteur (100%*hauteur/largeur-4.1rem )*/
+                /* 4.1 rem est calculé par rapport à la taille de la racine qui par defaut est de 16px */
+                /* 4.1rem equivaut à environ 65.6px 4.1rem*16px=65.6px*100 410% de la taille de la racine */
+                 
+                 
+                 top: 50%;
+                 left: 50%;
+                 transform: translate(-50%,-50%);
+                 
+                 /* top:50% l'élement sera positionné à 50% de la hauteur de la box en partant du haut*/
+                 /* left: 50% signifie que l'élément sera positionné à 50% de la largeur de son conteneur en partant de la gauche*/
+                 /*transforme: translate(-50%,-50%) cette propriété m'a permis de déplacer l'élement de -50 de sa propre largeur*/
+                 /*vers la gauche et 50 de sa hauteur vers le haut se qui m'a permis de corriger le positionneemnt de l'element*/
+                 /* centré horizontelment et verticalment dans la box*/
+                 
+                
+               }
+              
+              
+             
+               .sign-up{
+                   position:absolute;
+                   height:100%;
+                   width:45%;
+                   top:0;
+                   left:0;
+                  
+               }
+               
+               
+                  .sign-in{
+                  position:absolute;
+                  height:100%;
+                  width: 55%;
+                  left:45%;
+                  top:0;
+                  background-color:#8E0808;
+                   background-image : url("https://i.pinimg.com/564x/33/aa/c6/33aac6ca36865e2ba573a7c28913fa54.jpg");
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position:center;
+                  border-radius:20px;
+              }
+              
+             
+                 form{ 
+                 max-width:300px;
+                 width:100%;
+                 margin: 0 auto;
+                 height:100%;
+                 display:flex;
+                 flex-direction:column;
+                 justify-content:space-evenly;
+                 
+                 }
+             
+                .head1 h1{
+                 font-size:2.1rem;
+                 font-weight:600;
+                 display:flex;
+                 align-items:center;
+                 justify-content:center;
+             }
+             
+              
+              .input{
+                 position: relative;
+                 height: 37 px;
+                 margin-bottom:2rem; 
+                 color:white;
+              }
+              
+              
+  form .input-field{
+    width:100%;
+    padding:12px 15px;
+    font-size:18px;
+    border: none;
+    border-radius:20px;  
+    background-color:rgba(102, 102, 102, 0.5);
+ }
+ 
+ 
+              
+                
+               .sign-btn{
+                  display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+                  width:100%;
+                  height:40px;
+                  background-color:#8E0808;
+                  color:white;
+                  border:none;
+                  cursor: pointer;
+                  border-radius:20px;
+                  font-size:18px;
+                  margin-bottom:2rem;
+                  text-decoration:none; 
+               }
+            
+                  .sign-btn:hover {
+                opacity: 0.8;
+              }
+                   
+                   
+                   
+               .sign-in {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+            }
+            
+            .sign-in-btn {
+              margin-top: 10px;
+               border:none;
+                  cursor: pointer;
+                  border-radius:20px;
+                  font-size:18px;
+                   background-color:#8E0808;
+                   width:35%;
+                   padding:10px 12px;
+                   height:40px;
+                   text-decoration:none;
+            }
+            
+                    .sign-in-btn:hover {
+                opacity: 0.8;
+              }
+              
+              
+              .btn-grp{ display:grid;
+                  grid-template-columns: repeat(2, 1fr) ;
+                  gap:1rem;  
+              }
+              
+              .sign-btn-back {
+                  display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+                  width:100%;
+                  height:40px;
+                  background-color:#8E0808;
+                  color:white;
+                  border:none;
+                  cursor: pointer;
+                  border-radius:20px;
+                  font-size:18px;
+                  margin-bottom:2rem;
+                  text-decoration:none; 
+               }
+            
+                    .sign-btn-back:hover {
+                opacity: 0.8;
+              }
+              
+              
+              .form-step{
+              display: none;
+              }
+              /*cacher les autre et laisser la premiére active*/
+              
+              .form-step-active{
+                  display:block;
+              }
+              
+              /*barre de progression*/
+              .progress-bar{
+                position: relative;  
+                display: flex;
+                justify-content:space-between;
+                counter-reset: step;
+                /*reinitialisation du compteur*/
+                
+              }
+              
+              .progress-bar::before, .progress{
+                  content: "";
+                  /*ajouter la barre verticla qui semble relier chaque bouton rouge*/
+                  position: absolute;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  /*translation verticale pour le centrer verticalment au milieu de la barre de recherche*/
+                  height: 4px;
+                  width: 100%;
+                  background-color: #8E0808;
+                  /*::before pseudo element*/
+                  /*conetent:"" contenue vide */
+                  z-index:-1;
+                  /*z-index pour determiner qui est prioritére en cas de chevauchement */
+                 
+              }
+              
+              .progress{
+                 background-color:rgba(102, 102, 102, 2);
+                 width:	0%; 
+              }
+             
+             .progress-step{
+                 width: 2.1875rem;
+                 /* calcule de 3.5 px*/
+                 height: 2.1875rem;
+                 background-color:#8E0808;
+                 border-radius: 50%;
+                  display:flex;
+               justify-content: center;
+               align-items: center;
+                 
+             }
+              
+              
+              .progress-step::before{
+               counter-increment: step;
+               content: counter(step);
+               /*ajouter des chiffre qui s'auto incremente au compter nome step*/
+              }
+              
+              .progress-step-active {
+                 background-color:rgba(102, 102, 102, 2);
+                  color:#fff;
+                 
+                  
+              }
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              @media (max-width: 850px){
+                  .box1{
+                      height: auto;
+                      max-width:550px;
+                      overflow:hidden;
+                  }
+                  
+                  .inner-box{
+                      position : static;
+                      transform:none;
+                      width:revert;
+                      height: revert;  
+                      padding:3rem;
+                  }
+                  
+                  .sign-up{
+                      position:revert;
+                      width:100%;
+                      height:auto;
+                  }
+                  
+                  .sign-in{
+                      
+                     position:revert;
+                     height:auto;
+                     width:100%;
+                     margin-top:10px;
+                     padding:3rem 2rem;
+                     display:flex;
+                     overflow:hidden;
+                    
+                  }
+                      
+              .sign-in-btn {
+              font-size:16px;
+              width:100%;
+              max-width:150px;
+              }
+              
+              
+              form{
+                  max-width: revert;
+                
+              }
+              .progress_bar{
+                position: relative;  
+                display: flex;
+                justify-content:space-between;
+                counter-reset: step;
+                /*reinitialisation du compteur*/
+                margin:50px;
+                
+              }
+              
+             
+              
+            }

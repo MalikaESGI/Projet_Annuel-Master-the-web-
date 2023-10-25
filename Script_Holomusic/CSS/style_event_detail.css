@@ -1,0 +1,26 @@
+.btn{
+    color : white;
+}
+.custom-btn-cart{
+    color: white;
+    background-color: #8E0808;
+}
+body{
+background-color:black;
+
+}
+
+h8 , h1 ,p{
+color:white;
+}
+
+.container{
+
+margin-top: 50px;
+
+}
+
+.details{
+margin-top: 0px;
+
+}

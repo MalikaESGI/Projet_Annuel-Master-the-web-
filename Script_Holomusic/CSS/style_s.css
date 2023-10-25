@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+main {
+    min-height: 100vh;
+    margin-top: 55px;
+}
+
+.select {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-bottom: 20px;
+}
+
+.btn-custom {
+    background-color: #8E0808;
+    color: #fff;
+}
+
+.select > input {
+    margin-top: 30px;
+}

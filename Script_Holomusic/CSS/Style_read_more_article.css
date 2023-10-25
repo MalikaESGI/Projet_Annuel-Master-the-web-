@@ -1,0 +1,42 @@
+
+	body{background-color:black;}
+	
+	
+	.container{
+			border:none;
+	border-radius: 10px;
+	background-color:#121317;
+	color:white;
+	}
+	
+	
+	
+	form{
+		margin-top:20px;
+		
+    }
+	
+	  
+	  img{
+		 border:none;
+	  border-radius:25px;}
+        
+	  .btn-custom {
+		background-color: #8E0808;
+		color: #fff;
+	}
+	
+	.btn-custom:hover {
+		opacity: 0.8;
+		color: #fff;
+	}
+	
+
+
+ 
+	  
+	    
+	  
+	
+	
+	

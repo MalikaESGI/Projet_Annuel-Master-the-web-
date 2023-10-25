@@ -1,0 +1,47 @@
+body {
+	background-color: black;;
+}
+.btn-custom {
+	background-color: #8E0808;
+	color: #fff;
+}
+
+.btn-custom:hover {
+  opacity: 0.8;
+   color: #fff;
+   
+}
+
+ .form-select {
+	margin-bottom: 1rem;
+}
+
+.custom-select {
+	background-color: #121317;
+	color:#D9D9D9;
+	border-radius: 18px;
+	padding: 0.375rem 0.75rem;
+	border:none;
+}
+.article_container {
+	margin: 50px;
+}
+
+h1 {color:#fff;}
+body{background-color:black;}
+
+.form-control{
+	  background-color: #121317;
+	  border:none;	
+}
+
+.custom-alert{
+	width: 400px;
+	margin:0 auto;
+}
+.focus_footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 200px;
+}
